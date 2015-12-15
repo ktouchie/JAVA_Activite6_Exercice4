@@ -14,7 +14,22 @@ class Exercice4 {
         
 	}
 
-    public static void {
+    public static void caesar(String A, int B) {
         
+        char str[]=A.toCharArray();
+        String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for (int i=0; i<A.length(); i++) {
+            for (int j=0; j<26; j++) {
+                if (alpha.charAt(j) == str[i]) {
+                    if ((j+B)>25) {
+                        str[i] = alpha.charAt(j + B - 26);
+                    } else {
+                        str[i] = alpha.charAt(j + B);
+                    }
+                }
+            }  
+        }
+        System.out.println("Here is your encoded message: ");
+        System.out.println(A);
     }
 }
