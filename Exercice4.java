@@ -23,11 +23,7 @@ class Exercice4 {
         for (int i=0; i<A.length(); i++) {
             for (int j=0; j<26; j++) {
                 if (alpha.charAt(j) == str[i]) {
-                    if ((j+B)>25) {
-                        str[i] = alpha.charAt(j + B - 26);
-                    } else {
-                        str[i] = alpha.charAt(j + B);
-                    }
+                    str[i] = alpha.charAt(j + B);
                 }
             }  
         }
