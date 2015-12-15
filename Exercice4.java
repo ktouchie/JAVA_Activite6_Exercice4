@@ -10,6 +10,8 @@ class Exercice4 {
         
         System.out.println("Enter a value for K:");
         int k = sc.nextInt();
+        
+        caesar(msg, k)
 
         
 	}
@@ -26,5 +28,7 @@ class Exercice4 {
                 }
             }  
         }
+        System.out.println("Here is your encoded message: ");
+        System.out.println(A);
     }
 }
