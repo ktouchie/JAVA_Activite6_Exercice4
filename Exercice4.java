@@ -29,6 +29,7 @@ class Exercice4 {
                         str[i] = alpha.charAt(j + B);
                     }
                 }
+                break;
             }  
         }
         String code = new String (str);
