@@ -14,7 +14,17 @@ class Exercice4 {
         
 	}
 
-    public static void {
-        
+    public static void caesar(String A, int B) {
+        String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for (int i=0; i<A.length(); i++) {
+            for (int j=0; j<26; j++) {
+                if (alpha.charAt(j) == A.charAt(i)) {
+                    A.charAt(i) = alpha.charAt(j + B);
+                    if ((j+B)>25) {
+                        A.charAt(i) = alpha.charAt(j + B - 26);
+                    }
+                }
+            }  
+        }
     }
 }
