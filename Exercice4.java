@@ -11,7 +11,7 @@ class Exercice4 {
         System.out.println("Enter a value for K:");
         int k = sc.nextInt();
         
-        caesar(msg, k)
+        caesar(msg, k);
 
         
 	}
