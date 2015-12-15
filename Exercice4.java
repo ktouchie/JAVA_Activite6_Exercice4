@@ -24,6 +24,9 @@ class Exercice4 {
             for (int j=0; j<26; j++) {
                 if (alpha.charAt(j) == str[i]) {
                     str[i] = alpha.charAt(j + B);
+                    if ((j+B)>25) {
+                        str[i] = alpha.charAt(j+B-26);
+                    }
                 }
             }  
         }
