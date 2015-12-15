@@ -28,8 +28,8 @@ class Exercice4 {
                     } else {
                         str[i] = alpha.charAt(j + B);
                     }
+                    break;
                 }
-                break;
             }  
         }
         String code = new String (str);
